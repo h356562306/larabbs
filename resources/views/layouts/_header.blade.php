@@ -17,8 +17,28 @@
 
       <ul class="navbar-nav navbar-right">
         <!-- authentication links -->
-        <li class="nav-item"><a class="nav-link" href="{{route("login")}}">登录</a> </li>
-        <li class="nav-item"><a class="nav-link" href="{{route("register")}}">注册</a> </li>
+        @guest
+          <li class="nav-item"><a class="nav-link" href="{{route("login")}}">登录</a> </li>
+          <li class="nav-item"><a class="nav-link" href="{{route("register")}}">注册</a> </li>
+        @else
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="http://pics.sc.chinaz.com/Files/pic/icons128/7613/AA11.png" class="img-responsive img-cricle" width="30px" height="30px">
+              {{Auth::user()->name}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">个人中心</a>
+              <a class="dropdown-item" href="#">编辑资料</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" id="logout" href="#">
+                <form action="{{route("logout")}}" method="POST">
+                  {{csrf_field()}}
+                  <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
+                </form>
+              </a>
+            </div>
+          </li>
+        @endguest
       </ul>
     </div>
   </div>
