@@ -12,3 +12,7 @@
 */
 
 Route::get('/',"PagesController@root")->name("root");
+
+Auth::routes();//用户认证路由（vendor/laravel/framework/src/Illuminate/Routing/Router.php）搜索LoginController
+
+
