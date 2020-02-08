@@ -15,4 +15,5 @@ Route::get('/',"PagesController@root")->name("root");
 
 Auth::routes(['verify'=>true]);//用户认证路由（vendor/laravel/framework/src/Illuminate/Routing/Router.php）搜索LoginController
 
+Route::resource("users","UsersController",['only'=>['show','update','edit']]);
 
