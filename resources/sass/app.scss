@@ -8,7 +8,7 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands ';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 body{
   font-family: "Helvetica" ,"Microsoft YaHe" ,Arial ,sans-serif;
@@ -51,5 +51,13 @@ body{
     a{
       color: inherit;
     }
+  }
+}
+.register-page{
+  img.captcha{
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 3px;
   }
 }
