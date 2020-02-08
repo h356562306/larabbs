@@ -7,10 +7,10 @@
         <img src="https://cdn.learnku.com/uploads/images/201801/03/1/LK3fRYxE15.jpg" class="card-img-top" alt="{{$user->name}}">
         <div class="card-body">
           <h5><strong>个人简介</strong></h5>
-          <p>Hi~,你好吗</p>
+          <p>{{$user->introduction}}</p>
           <hr>
           <h5><strong>注册于</strong></h5>
-          <p>2018-01-06</p>
+          <p>{{$user->created_at}}</p>
         </div>
       </div>
     </div>
