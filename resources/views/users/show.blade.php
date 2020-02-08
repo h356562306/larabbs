@@ -1,10 +1,10 @@
 @extends("layouts.app")
-@section("title","的个人中心")
+@section("title",$user->name."的个人中心")
 @section("content")
   <div class="row">
     <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
       <div class="card">
-        <img src="https://cdn.learnku.com/uploads/images/201801/03/1/LK3fRYxE15.jpg" class="card-img-top" alt="{{$user->name}}">
+        <img src="{{$user->avatar}}" class="card-img-top" alt="{{$user->name}}">
         <div class="card-body">
           <h5><strong>个人简介</strong></h5>
           <p>{{$user->introduction}}</p>
