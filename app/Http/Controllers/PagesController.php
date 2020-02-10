@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     //
-    public function root(){
-        return view("pages.root");
+    public function root(User $user){
+        return view("pages.root",compact("user"));
     }
 }
