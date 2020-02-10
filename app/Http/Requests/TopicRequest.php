@@ -13,6 +13,9 @@ class TopicRequest extends Request
             {
                 return [
                     // CREATE ROLES
+                    'title' => 'required|min:2',
+                    'body' => 'required|min:3',
+                    'category_id' => 'required|numeric'
                 ];
             }
             // UPDATE
@@ -36,6 +39,8 @@ class TopicRequest extends Request
     {
         return [
             // Validation messages
+            'title.min' => "标题必须两个字以上",
+            'body.min' => '文章内容必须两个字以上'
         ];
     }
 }
