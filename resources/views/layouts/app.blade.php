@@ -7,6 +7,7 @@
   <!-- CSRF TOKEN -->
   <meta content="{{csrf_token()}}" name="csrf-token">
   <title>@yield('title','LaraBBS') - Laravel</title>
+  <meta name="description" content="@yield('description','LaraBBS 爱好者社区')">
   <!-- style -->
   <link href="{{mix("css/app.css")}}" rel="stylesheet">
   @yield("styles")
