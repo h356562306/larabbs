@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd148f6c-f653-41d9-a2e1-e4e0e2c52d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Jobs/TranslateSlug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/horizon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_12_125720_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/css/app.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/img/horizon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/img/sprite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/js/app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/horizon/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/larabbs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ReplyRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_13_063025_create_replies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ReplysTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/replies/create_and_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/replies/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/replies/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/TopicObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TopicObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +218,7 @@
       <workItem from="1580977537501" duration="1201000" />
       <workItem from="1581044785885" duration="27298000" />
       <workItem from="1581302156537" duration="6563000" />
-      <workItem from="1581484971059" duration="16158000" />
+      <workItem from="1581484971059" duration="17810000" />
     </task>
     <servers />
   </component>
