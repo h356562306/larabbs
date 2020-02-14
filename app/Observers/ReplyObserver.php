@@ -26,4 +26,9 @@ class ReplyObserver
         $reply->topic->save();
         $reply->topic->user->notify(new TopicReplied($reply));
     }
+
+    public function deleted(Reply $reply){
+        $reply->topic->reply_count = $reply->topic->replies->count();
+        $reply->save();
+    }
 }
