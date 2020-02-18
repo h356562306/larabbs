@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd148f6c-f653-41d9-a2e1-e4e0e2c52d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/CalculateActiveUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Traits/ActiveUserHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Link.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/LinkObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/administrator/links.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/LinkFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_18_150808_create_links_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/LinksTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/administrator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -216,7 +219,7 @@
       <workItem from="1581302156537" duration="6563000" />
       <workItem from="1581484971059" duration="27071000" />
       <workItem from="1581645370398" duration="22569000" />
-      <workItem from="1581818694442" duration="7509000" />
+      <workItem from="1581818694442" duration="9163000" />
     </task>
     <servers />
   </component>
@@ -244,7 +247,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/TopicsController.php</url>
-          <line>43</line>
+          <line>45</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
